@@ -11,7 +11,7 @@ services:
   # 服务名称
   mongo:
     # 安装镜像
-    image: mongo:4.2.2
+    image: mongo:4.2.7
     # 容器名称
     container_name: mongo
     volumes:
@@ -37,7 +37,7 @@ services:
       - huasenNetwork
 
   redis:
-    image: redis:6.0.10-alpine
+    image: redis:6.2.10-alpine
     container_name: redis
     privileged: true
     environment:
@@ -54,7 +54,7 @@ services:
       - huasenNetwork
 
   nginx:
-    image: nginx:1.23.1
+    image: nginx:1.25.1
     container_name: nginx
     restart: always
     volumes:
