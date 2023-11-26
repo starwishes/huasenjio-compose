@@ -20,7 +20,7 @@ projectPath=$sh_path"/.."
 # 远程仓库名称
 gitStorageName="huasenjio-compose"
 # 远程仓库地址
-gitStoragePath="https://gitee.com/HuaSenJioJio/huasenjio-compose.git"
+gitStoragePath="https://github.com/starwishes/huasenjio-compose.git"
 
 # 缓存目录
 tempPath=$sh_path"/../../huasen-temp"
@@ -40,7 +40,7 @@ echo '3.正在清空容器...'
 # 进入根目录
 cd $projectPath
 # 停止并删除容器
-docker-compose down
+docker compose down
 
 echo '4.正在备份数据文件...'
 # 开启报错继续执行
@@ -64,9 +64,9 @@ chmod u+x $projectPath/bin/*
 echo '6.正在重启容器...'
 cd $projectPath
 # 构建镜像
-docker-compose build server
+docker compose build server
 # 重启容器
-docker-compose up -d
+docker compose up -d
 # 清理废弃的数据卷和镜像
 docker image prune -f
 docker volume prune -f
