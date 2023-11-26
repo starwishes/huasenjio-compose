@@ -23,14 +23,14 @@ gitStorageName="huasenjio-compose"
 gitStoragePath="https://github.com/starwishes/huasenjio-compose.git"
 
 # 缓存目录
-tempPath=$(cd $sh_path"/../../huasen-temp")
-
-
+tempPath=$sh_path"/../../huasen-temp"
 echo '1.正在重置缓存...'
 # 若没有缓存目录，则创建缓存目录
 if [ ! -d $tempPath ]; then mkdir $tempPath; fi
 # 删除已下载的源码
 if [ ! -d $tempPath/$gitStorageName ]; then echo '未发现源码文件'; else rm -rf $tempPath/$gitStorageName; fi
+
+tempPath=$(cd $sh_path"/../../huasen-temp")
 
 echo '2.正在拉取源码...'
 # 拉取最新源代码到缓存区
