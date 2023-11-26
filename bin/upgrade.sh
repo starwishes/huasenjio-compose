@@ -15,7 +15,7 @@ set -e
 sh_path=$(cd $(dirname "$0") && pwd)
 
 # 项目根目录的路径
-projectPath=$sh_path"/.."
+projectPath==$(cd $sh_path"/.." && pwd)
 
 # 远程仓库名称
 gitStorageName="huasenjio-compose"
@@ -23,7 +23,7 @@ gitStorageName="huasenjio-compose"
 gitStoragePath="https://github.com/starwishes/huasenjio-compose.git"
 
 # 缓存目录
-tempPath=$projectPath"/../huasen-temp"
+tempPath=$(cd $projectPath"/../huasen-temp")
 
 echo '1.正在重置缓存...'
 # 若没有缓存目录，则创建缓存目录
