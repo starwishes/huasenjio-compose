@@ -23,7 +23,7 @@ gitStorageName="huasenjio-compose"
 gitStoragePath="https://github.com/starwishes/huasenjio-compose.git"
 
 # 缓存目录
-tempPath=$(cd $projectPath"/../huasen-temp")
+tempPath=$(cd $projectPath"/../huasen-temp" && pwd)
 
 echo '1.正在重置缓存...'
 # 若没有缓存目录，则创建缓存目录
