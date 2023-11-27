@@ -18,8 +18,8 @@ echo "2.正在停止容器..."
 # 进入根目录
 cd $projectPath
 # 停止并删除容器
-docker-compose stop nginx server mongo redis
-docker-compose rm -f nginx server mongo redis
+docker compose stop nginx server mongo redis
+docker compose rm -f nginx server mongo redis
 
 echo "3.准备移除旧文件..."
 set +e
@@ -43,9 +43,9 @@ chmod u+x $projectPath/bin/*
 echo "7.升级容器..."
 # 构建镜像
 cd $projectPath
-docker-compose build server
+docker compose build server
 # 重启容器
-docker-compose up -d
+docker compose up -d
 # 清理废弃的数据卷和镜像
 docker image prune -f
 docker volume prune -f
