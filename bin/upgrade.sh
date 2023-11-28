@@ -73,6 +73,6 @@ docker compose up -d
 docker image prune -f
 docker volume prune -f
 
-echo '1.正在删除'
+echo '7.正在删除缓存'
 # 若有缓存目录，则删除缓存目录
 if [  -d $tempPath ]; then mkdir $tempPath; fi
