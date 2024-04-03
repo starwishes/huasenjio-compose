@@ -2,10 +2,10 @@
   "site": {
     "brandName": "花森",
     "brandUrl": "",
-    "redirectUrl": "http://huasen.cc/",
+    "redirectUrl": "http://huasenjio.top/",
     "guidePageName": "花森小窝",
-    "guidePageUrl": "http://huasen.cc/",
-    "footerHtml": "<a href=\"https://beian.miit.gov.cn/\">桂ICP备20001761号</a>",
+    "guidePageUrl": "http://huasenjio.top/",
+    "footerHtml": "",
     "openLabelClassification": true,
     "jwt": "",
     "jwtLiveTime": 604800,
@@ -38,14 +38,15 @@
     }
   },
   "mail": {
-    "host": "smtp.qq.com",
+    "host": "smtp.163.com",
     "port": 465,
-    "user": "932397243@qq.com",
-    "mtp": ""
+    "user": "huasenjio@163.com",
+    "mtp": "HWIDIXVBPESBFBCM"
   },
   "article": {
     "changelog": "648c79d1cdf0f0076b134525",
     "about": "648c79d1cdf0f0076b134525",
-    "help": "648c79d1cdf0f0076b134525"
+    "help": "648c79d1cdf0f0076b134525",
+    "notice": ""
   }
 }
