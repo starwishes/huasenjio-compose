@@ -115,18 +115,6 @@ export default {
           url: site.guidePageUrl,
           isArticle: false,
         },
-        {
-          iconfontClass: 'iconfont icon-md-stats',
-          text: '更新日志',
-          url: this.$store.state.appConfig.article.changelog,
-          isArticle: true,
-        },
-        {
-          iconfontClass: 'iconfont icon-md-at',
-          text: '关于我们',
-          url: this.$store.state.appConfig.article.about,
-          isArticle: true,
-        },
       ];
     },
   },
