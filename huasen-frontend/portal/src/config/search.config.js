@@ -48,6 +48,5 @@ const searchs = [
     name: '站内',
     iconClass: 'iconfont icon-md-planet',
   },
-  ]
 ];
 export default searchs;

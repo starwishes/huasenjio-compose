@@ -1,7 +1,7 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2022-08-28 23:45:07
- * @LastEditors: huasenjio
+ * @LastEditors: starwishes
  * @LastEditTime: 2023-04-29 00:43:49
  * @Description: 
 -->
@@ -49,8 +49,6 @@ export default {
     goTop() {
       Bus.pubEv(HOME_SCROLL_TO, 0, true);
     },
-
-
   },
 };
 </script>
@@ -77,4 +75,5 @@ export default {
       }
     }
   }
+}
 </style>

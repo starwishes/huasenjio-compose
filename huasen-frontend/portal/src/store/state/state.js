@@ -81,7 +81,6 @@ export default {
       guidePageName: '花森小窝',
       guidePageUrl: 'http://huasenjio.top/',
       footerHtml: '',
-      serviceQRCodeUrl: require('@/assets/img/logo/weixin.png'),
       openLabelClassification: false,
     },
   },
