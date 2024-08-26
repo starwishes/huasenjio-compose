@@ -101,8 +101,7 @@ Vue.directive('discolor', {
       document.body.appendChild(Menu.$el);
     });
 
-    // 菜单外任意位置隐藏菜单
-    document.addEventListener('click', event => {
+    document.onmousedown = event => {
       // 兼容safari和火狐浏览器不存在path情况
       let domPath = event.path || (event.composedPath && event.composedPath()) || [];
       // 一真则真
@@ -116,7 +115,7 @@ Vue.directive('discolor', {
         // 移除菜单面板
         document.body.removeChild(menuDOM);
       }
-    });
+    };
   },
 });
 
@@ -212,7 +211,6 @@ function addresize(dom, fn) {
       // 若resize回调存在，则调用绑定window上下午，直接执行一遍
       oldfn.call(window);
       if (dom.offsetWidth != w || dom.offsetHeight != h) {
-        console.log(dom.offsetWidth);
         w = dom.offsetWidth;
         h = dom.offsetHeight;
         // 执行回调方法
