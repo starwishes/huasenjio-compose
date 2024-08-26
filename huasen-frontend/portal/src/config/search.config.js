@@ -35,22 +35,6 @@ const searchs = [
     iconClass: 'iconfont icon-translate',
   },
   {
-    url: 'https://xueshu.baidu.com/s',
-    key: 'wd',
-    params: {},
-    name: '学术',
-    iconClass: 'iconfont icon-md-school',
-  },
-  {
-    url: 'https://image.baidu.com/search/index',
-    key: 'word',
-    params: {
-      tn: 'baiduimage',
-    },
-    name: '搜图',
-    iconClass: 'iconfont icon-md-image',
-  },
-  {
     url: 'https://duckduckgo.com/',
     key: 'q',
     params: {},
@@ -64,12 +48,6 @@ const searchs = [
     name: '站内',
     iconClass: 'iconfont icon-md-planet',
   },
-  // {
-  //   url: "https://quark.sm.cn/s",
-  //   key: "q",
-  //   params: {},
-  //   name: "夸克",
-  //   iconClass: "iconfont icon-md-planet",
-  // },
+  ]
 ];
 export default searchs;
