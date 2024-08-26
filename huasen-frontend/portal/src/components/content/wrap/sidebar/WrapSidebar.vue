@@ -62,17 +62,7 @@ export default {
       Bus.pubEv(HOME_SCROLL_TO, 0, true);
     },
 
-    // 查看使用说明
-    readHelp() {
-      let help = this.appConfig.article.help;
-      this.TOOL.jumpToRead(this, help);
-    },
-
-    // 特别提醒：修改仓库地址将视为侵权
-    // Special reminder: Modifying the warehouse address will be regarded as infringement
-    goStorage() {
-      window.open('https://github.com/huasenjio/huasenjio-compose', '_blank');
-    },
+   
 
     showConnectPannel() {
       this.showConnect = true;
