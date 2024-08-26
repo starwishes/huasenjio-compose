@@ -7,11 +7,11 @@
  */
 const searchs = [
   {
-    url: 'https://www.baidu.com/s',
+    url: 'https://metaso.cn',
     key: 'word',
     params: {},
-    name: '百度',
-    iconClass: 'iconfont icon-baidu',
+    name: '秘塔AI',
+    iconClass: 'iconfont icon-metaso',
   },
   {
     url: 'https://www.google.com/search',
