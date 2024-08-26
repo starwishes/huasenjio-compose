@@ -8,7 +8,7 @@
 const searchs = [
   {
     url: 'https://metaso.cn',
-    key: 'word',
+    key: 'q',
     params: {},
     name: '秘塔AI',
     iconClass: 'iconfont icon-metaso',
