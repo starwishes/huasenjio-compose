@@ -70,7 +70,6 @@ export default {
             guidePageUrl: that.LODASH.get(res.data, 'site.guidePageUrl') || 'http://huasenjio.top/',
             footerHtml: that.LODASH.get(res.data, 'site.footerHtml') || '',
             openLabelClassification: that.LODASH.get(res.data, 'site.openLabelClassification') || false,
-            serviceQRCodeUrl: that.LODASH.get(res.data, 'site.serviceQRCodeUrl') || require('@/assets/img/logo/weixin.png'),
           },
         },
         themeConfig: that.LODASH.get(res.data, 'theme'),
