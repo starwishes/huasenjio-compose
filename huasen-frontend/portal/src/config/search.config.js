@@ -11,7 +11,7 @@ const searchs = [
     key: 'q',
     params: {},
     name: '秘塔AI',
-    iconClass: 'iconfont icon-search',
+    iconClass: 'iconfont icon-md-search',
   },
   {
     url: 'https://www.google.com/search',
